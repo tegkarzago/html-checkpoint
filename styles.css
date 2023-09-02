@@ -1,0 +1,192 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('ecran.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: moveBackground 10s linear infinite;
+}
+
+/* Créez une animation @keyframes pour déplacer l'image de fond horizontalement */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* Appliquer l'animation aux balises h2 et p */
+main h2,
+main p {
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: fadeInUp 3s ease-in-out infinite;
+}
+
+/* Créez une animation @keyframes pour l'effet de fondu */
+@keyframes fadeInUp {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles pour la section principale */
+main {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/* Styles pour la ligne d'images */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: moveImages 5s linear infinite;
+}
+
+/* Styles pour chaque image */
+.image-row img {
+    max-width: 30%;
+    height: auto;
+}
+
+/* Animation pour déplacer les images de gauche à droite */
+@keyframes moveImages {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Styles pour la section "Médias" */
+#media {
+    text-align: center;
+    padding: 40px;
+}
+
+#media h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le tableau */
+#tableau {
+    text-align: center;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles pour les sections "À propos", "Travail", "CV" et "Contact" */
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+/* Styles pour le formulaire */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Styles pour les titres h2 */
+h2 {
+    color: #333;
+}
